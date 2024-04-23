@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madurai Tourism</title>
+<!-- Internal CSS -->
+<style>
+/* Internal CSS */
+body {
+font-family: Arial, sans-serif;
+
+
+margin: 0;
+padding: 0;
+}
+.header {
+text-align: center;
+padding: 20px 0;
+background-color: #f8f8f8;
+}
+.header h1 {
+font-size: 36px;
+text-transform: uppercase;
+color: #333;
+text-shadow: 2px 2px 2px #ccc;
+}
+.signup-login {
+position: absolute;
+top: 20px;
+right: 20px;
+text-decoration: none;
+color: #333;
+}
+.description {
+padding: 20px;
+background-color: #f0f0f0;
+color: #555;
+}
+.tourist-destinations {
+margin: 20px;
+border: 1px solid #ccc;
+
+
+}
+.tourist-destinations td {
+padding: 10px;
+text-align: center;
+}
+.fixed-image {
+position: fixed;
+top: 100px;
+right: 20px;
+cursor: pointer;
+}
+.form-container {
+position: absolute;
+top: 100px;
+right: 20px;
+padding: 20px;
+border: 1px solid #ccc;
+background-color: #fff;
+display: none;
+}
+.services-container {
+position: absolute;
+top: 200px;
+left: 20px;
+animation: slide 5s infinite;
+}
+@keyframes slide {
+0% { transform: translateY(0); }
+25% { transform: translateY(-50px); }
+
+
+50% { transform: translateY(0); }
+75% { transform: translateY(50px); }
+100% { transform: translateY(0); }
+}
+</style>
+<!-- External CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+<h1>Madurai Tourism</h1>
+<a href="#" class="signup-login">Signup/Login</a>
+</div>
+<div class="description">
+<p>Welcome to Madurai Tourism! Explore the rich culture, heritage, and beauty of
+Madurai city.</p>
+</div>
+<table class="tourist-destinations">
+<tr>
+<td><img src="destination1.jpg" alt="Destination 1"><br>Destination 1</td>
+<td><img src="destination2.jpg" alt="Destination 2"><br>Destination 2</td>
+<td><img src="destination3.jpg" alt="Destination 3"><br>Destination 3</td>
+</tr>
+<tr>
+<td><img src="destination4.jpg" alt="Destination 4"><br>Destination 4</td>
+<td><img src="destination5.jpg" alt="Destination 5"><br>Destination 5</td>
+<td><img src="destination6.jpg" alt="Destination 6"><br>Destination 6</td>
+</tr>
+</table>
+
+
+<div class="fixed-image">
+<img src="contact.jpg" alt="Contact" width="100" height="100">
+</div>
+<div class="form-container">
+<h2>Contact Form</h2>
+<form action="#">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br>
+<label for="address">Address:</label><br>
+<textarea id="address" name="address"></textarea><br>
+<label for="preferences">Preferences:</label><br>
+<input type="text" id="preferences" name="preferences"><br><br>
+<input type="submit" value="Submit">
+</form>
+</div>
+<div class="services-container">
+<img src="service1.jpg" alt="Service 1" width="100" height="100">
+<img src="service2.jpg" alt="Service 2" width="100" height="100">
+<img src="service3.jpg" alt="Service 3" width="100" height="100">
+</div>
+<script>
+// JavaScript to toggle the form visibility
+const image = document.querySelector('.fixed-image img');
+const formContainer = document.querySelector('.form-container');
+
+image.addEventListener('click', function() {
+formContainer.style.display = 'block';
+});
+</script>
+
+
+</body>
+</html>
